@@ -2,9 +2,9 @@
 
 纯静态站点：HTML + Tailwind（本地编译）+ Alpine.js，部署在 Cloudflare Workers（静态资源）。中文是主版本（根路径），英文在 `/en/`。
 
-[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/你的用户名/你的仓库名)
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/jeklau/taovate-site)
 
-> 把上面链接里的 `你的用户名/你的仓库名` 换成真实的 GitHub 地址。一键部署按钮要求仓库是**公开**的。
+> 一键部署按钮要求仓库是**公开**的（`jeklau/taovate-site` 需保持 Public）。
 
 ## 页面与地址
 
