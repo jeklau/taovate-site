@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Taovate | Request a free audit</title>
+<meta name="description" content="Tell us about your product and your market. We'll give you an honest read on what it takes to rank — build, content, SEO, or all three.">
+<link rel="canonical" href="https://taovate.com/en/contact">
+<link rel="alternate" hreflang="zh" href="https://taovate.com/contact">
+<link rel="alternate" hreflang="en" href="https://taovate.com/en/contact">
+<link rel="alternate" hreflang="x-default" href="https://taovate.com/contact">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Taovate 韬维">
+<meta property="og:title" content="Contact — Taovate | Request a free audit">
+<meta property="og:description" content="Tell us about your product and your market. We'll give you an honest read on what it takes to rank — build, content, SEO, or all three.">
+<meta property="og:url" content="https://taovate.com/en/contact">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:image" content="https://taovate.com/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Taovate 韬维：道法自然，水到渠成">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/taovate-symbol-favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/taovate.css">
+<script src="/site.js"></script>
+<script defer src="/contact-form.js"></script>
+<script defer src="/vendor/alpine.min.js"></script>
+</head>
+<body class="bg-paper text-ink font-sans antialiased">
+
+<header class="sticky top-0 z-50 bg-paper/85 backdrop-blur border-b border-mist" x-data="{open:false}">
+  <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+    <a href="/en/" class="flex items-center gap-2.5" aria-label="Taovate home"><svg viewBox="0 0 64 64" class="h-6 w-6 text-teal" aria-hidden="true"><g stroke="currentColor" stroke-width="4" stroke-linecap="round"><line x1="23" y1="22" x2="41" y2="22"/><line x1="18" y1="32" x2="28" y2="32"/><line x1="36" y1="32" x2="46" y2="32"/><line x1="14" y1="42" x2="50" y2="42"/></g></svg><span class="text-[19px] font-bold tracking-tight"><span class="text-teal">Tao</span><span class="text-ink">vate</span></span></a>
+    <nav class="hidden md:flex items-center gap-7 text-[15px] text-muted">
+      <a href="/en/services" class="hover:text-ink transition">Services</a>
+      <a href="/en/case-study" class="hover:text-ink transition">Case studies</a>
+      <a href="/en/about" class="hover:text-ink transition">About</a>
+      <a href="/en/contact" class="text-ink font-medium">Contact</a>
+      <a href="/contact" class="text-muted hover:text-ink transition border-l border-mist pl-7">中文</a>
+      <a href="#form" class="inline-flex items-center rounded-full bg-ink text-paper px-5 py-2 font-medium hover:bg-teal-deep transition">Request a free audit</a>
+    </nav>
+    <button @click="open=!open" class="md:hidden p-2 -mr-2 text-ink" aria-label="Toggle menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path x-show="!open" d="M3 6h18M3 12h18M3 18h18"/><path x-show="open" d="M6 6l12 12M18 6L6 18" x-cloak/></svg></button>
+  </div>
+  <div x-show="open" x-cloak @click="open=false" class="md:hidden border-t border-mist bg-paper px-6 py-4 flex flex-col gap-4 text-[15px]"><a href="/en/services" class="text-muted">Services</a><a href="/en/case-study" class="text-muted">Case studies</a><a href="/en/about" class="text-muted">About</a><a href="/en/contact" class="text-ink font-medium">Contact</a><a href="/contact" class="text-muted">中文</a></div>
+</header>
+
+<main>
+<section class="max-w-6xl mx-auto px-6 pt-20 pb-24 md:pt-28 grid md:grid-cols-2 gap-14 items-start">
+  <div class="md:pt-6">
+    <p class="eyebrow text-xs font-medium uppercase text-teal-deep mb-6">Contact</p>
+    <h1 class="font-serif text-4xl md:text-5xl font-medium leading-[1.1] tracking-tight">Tell us about your product and your market.</h1>
+    <p class="mt-7 text-lg text-muted leading-relaxed">We'll give you an honest read on what it would take to rank — build, content, SEO, or all three. No pressure, no jargon.</p>
+    <div class="mt-10 space-y-5 text-[15px]">
+      <div><p class="text-muted">Prefer email?</p><a href="mailto:hello@taovate.com" class="text-ink font-medium hover:text-teal-deep transition">hello@taovate.com</a></div>
+      <div><p class="text-muted">Response time</p><p class="text-ink">Usually within one business day.</p></div>
+    </div>
+  </div>
+
+  <div id="form" class="bg-white border border-mist rounded-2xl p-7 md:p-9 reveal">
+    <div x-data="contactForm()">
+      <form @submit.prevent="submit" x-show="!done" class="space-y-5">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label class="lbl" for="name">Name <span class="text-teal-deep">*</span></label><input class="field" id="name" type="text" x-model="f.name" autocomplete="name"></div>
+          <div><label class="lbl" for="company">Company</label><input class="field" id="company" type="text" x-model="f.company" autocomplete="organization"></div>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label class="lbl" for="email">Email <span class="text-teal-deep">*</span></label><input class="field" id="email" type="email" x-model="f.email" autocomplete="email"></div>
+          <div><label class="lbl" for="website">Current website</label><input class="field" id="website" type="text" x-model="f.website" placeholder="example.com"></div>
+        </div>
+        <div><label class="lbl" for="industry">What do you make / your industry</label><input class="field" id="industry" type="text" x-model="f.industry" placeholder="e.g. gear &amp; transmission components"></div>
+        <div><label class="lbl" for="need">What you need</label>
+          <select class="field" id="need" x-model="f.need">
+            <option value="">Select one…</option>
+            <option>A new website</option>
+            <option>SEO for an existing site</option>
+            <option>Both — build and SEO</option>
+            <option>Not sure yet</option>
+          </select>
+        </div>
+        <div><label class="lbl" for="message">Anything else</label><textarea class="field" id="message" rows="4" x-model="f.message" placeholder="Your goals, target markets, timeline…"></textarea></div>
+        <div class="hidden" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off" x-model="f._gotcha"></div>
+        <p x-show="error" x-cloak x-text="error" class="text-sm" style="color:#A32D2D"></p>
+        <button type="submit" :disabled="loading" class="w-full inline-flex items-center justify-center rounded-full bg-ink text-paper px-7 py-3.5 font-medium hover:bg-teal-deep transition disabled:opacity-60"><span x-text="loading ? 'Sending…' : 'Send inquiry'"></span></button>
+        <p class="text-xs text-muted text-center">We reply to every inquiry personally. Your details are never shared.</p>
+      </form>
+      <div x-show="done" x-cloak class="text-center py-10">
+        <div class="mx-auto w-12 h-12 rounded-full bg-teal/15 flex items-center justify-center mb-5"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0F6E56" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+        <h2 class="font-serif text-2xl font-medium mb-2">Thank you — we've got it.</h2>
+        <p class="text-muted">We'll get back to you, usually within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-ink text-paper/70">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-3 gap-10">
+    <div><div class="flex items-center gap-2.5 text-paper"><svg viewBox="0 0 64 64" class="h-6 w-6 text-teal" aria-hidden="true"><g stroke="currentColor" stroke-width="4" stroke-linecap="round"><line x1="23" y1="22" x2="41" y2="22"/><line x1="18" y1="32" x2="28" y2="32"/><line x1="36" y1="32" x2="46" y2="32"/><line x1="14" y1="42" x2="50" y2="42"/></g></svg><span class="text-lg font-semibold tracking-tight"><span class="text-teal">Tao</span>vate</span></div><p class="mt-4 font-serif text-paper/60">韬维 · 道法自然，水到渠成</p></div>
+    <div class="flex flex-col gap-3 text-[15px]"><a href="/en/services" class="hover:text-paper transition">Services</a><a href="/en/case-study" class="hover:text-paper transition">Case studies</a><a href="/en/about" class="hover:text-paper transition">About</a><a href="/en/contact" class="hover:text-paper transition">Contact</a><a href="/contact" class="hover:text-paper transition">中文</a></div>
+    <div class="text-[15px]"><p>Get in touch</p><a href="mailto:hello@taovate.com" class="text-paper hover:text-teal transition">hello@taovate.com</a></div>
+  </div>
+  <div class="border-t border-paper/10"><div class="max-w-6xl mx-auto px-6 py-6 text-sm text-paper/60">© <span id="yr"></span> Taovate. All rights reserved.</div></div>
+</footer>
+
+</body>
+</html>

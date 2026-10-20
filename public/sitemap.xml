@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://taovate.com/</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/about</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/about"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/case-study</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/case-study"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/case-study"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/case-study"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/contact"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/about"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/about"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/en/case-study</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/case-study"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/case-study"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/case-study"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/contact"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/services"/>
+  </url>
+  <url>
+    <loc>https://taovate.com/seo/</loc>
+  </url>
+  <url>
+    <loc>https://taovate.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://taovate.com/services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://taovate.com/en/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://taovate.com/services"/>
+  </url>
+</urlset>

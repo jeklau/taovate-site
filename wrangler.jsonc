@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "taovate",
+  "compatibility_date": "2026-10-01",
+
+  // 纯静态站：没有 Worker 脚本，只托管 public/ 目录。
+  // html_handling 使用默认值（auto-trailing-slash）：/services.html 会 307 到 /services，
+  // 所以站内链接、canonical、hreflang、sitemap 全部使用无后缀地址（npm run check 会检查）。
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+
+  // 绑定自己的域名（域名的 DNS 需要在 Cloudflare 上）。取消注释并按需修改：
+  // "routes": [
+  //   { "pattern": "taovate.com", "custom_domain": true },
+  //   { "pattern": "www.taovate.com", "custom_domain": true }
+  // ]
+}

@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Custom base styles (previously in per-page <style> blocks) ────────── */
+
+@layer base {
+  /* 标题衬线字体：中文页用思源宋体，英文页（html lang="en"）用 Spectral */
+  :root { --font-serif: 'Noto Serif SC Variable', 'Songti SC', 'SimSun', serif; }
+  :root:lang(en) { --font-serif: 'Spectral', Georgia, serif; }
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; }
+  [x-cloak] { display: none !important; }
+}
+
+@layer utilities {
+  /* Reveal animation */
+  .js .reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .8s ease, transform .8s ease;
+  }
+  .js .reveal.in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Eyebrow letter-spacing */
+  .eyebrow { letter-spacing: .22em; }
+
+  /* Form fields */
+  .field {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #E7EDEA;
+    border-radius: 10px;
+    padding: .7rem .9rem;
+    font-size: 15px;
+    color: #14201C;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .field:focus {
+    outline: none;
+    border-color: #1D9E75;
+    box-shadow: 0 0 0 3px rgba(29, 158, 117, .15);
+  }
+
+  label.lbl {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #5A6B64;
+    margin-bottom: .4rem;
+  }
+
+  /* Hero ripple animation */
+  .ripple-line {
+    transform-box: fill-box;
+    transform-origin: center;
+  }
+
+  @keyframes drawRipple {
+    from { opacity: 0; transform: scaleX(.35); }
+    to   { opacity: 1; transform: scaleX(1); }
+  }
+
+  .hero-ripple .ripple-line {
+    animation: drawRipple 1s cubic-bezier(.2, .7, .2, 1) both;
+  }
+  .hero-ripple .ripple-line:nth-child(1) { animation-delay: .05s; }
+  .hero-ripple .ripple-line:nth-child(2) { animation-delay: .15s; }
+  .hero-ripple .ripple-line:nth-child(3) { animation-delay: .25s; }
+  .hero-ripple .ripple-line:nth-child(4) { animation-delay: .35s; }
+  .hero-ripple .ripple-line:nth-child(5) { animation-delay: .35s; }
+  .hero-ripple .ripple-line:nth-child(6) { animation-delay: .45s; }
+  .hero-ripple .ripple-line:nth-child(7) { animation-delay: .55s; }
+  .hero-ripple .ripple-line:nth-child(8) { animation-delay: .65s; }
+}
+
+/* Reduced-motion overrides */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .js .reveal { opacity: 1; transform: none; transition: none; }
+  .hero-ripple .ripple-line { animation: none; opacity: 1; transform: none; }
+}
